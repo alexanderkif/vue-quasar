@@ -1,1 +1,3 @@
-# vue-quasar
+# Quasar App
+
+> WIP
