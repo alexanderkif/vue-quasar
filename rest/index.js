@@ -1,7 +1,7 @@
 
 const Koa = require('koa')
 const app = new Koa()
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 const KoaBodyParser = require('koa-bodyparser')
 
 app.use(KoaBodyParser())
