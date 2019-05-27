@@ -1,9 +1,10 @@
 
 const config = require('./config.json')
+const connectionURL = process.env.DATABASE_URL ? `${process.env.DATABASE_URL}?ssl=true` : `${config['DATABASE_URL']}?ssl=true`
 
 var knex = require('knex')({
   client: 'pg',
-  connection: process.env.DATABASE_URL || config['DATABASE_URL'] + '?ssl=true',
+  connection: connectionURL,
   searchPath: ['knex', 'public']
 })
 
