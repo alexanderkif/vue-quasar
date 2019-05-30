@@ -41,7 +41,10 @@ module.exports = function (ctx) {
         'QFooter',
         'QTabs',
         'QTab',
-        'QRouteTab'
+        'QRouteTab',
+        'QCard',
+        'QCardSection',
+        'QCardActions'
       ],
 
       directives: [
@@ -61,7 +64,7 @@ module.exports = function (ctx) {
 
     build: {
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
