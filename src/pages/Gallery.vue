@@ -18,7 +18,7 @@
   </q-page>
 </template>
 
-<style lang="scss" scoped>reset
+<style lang="scss" scoped>
   .my-card {
     width: 100%;
     max-width: 250px;
